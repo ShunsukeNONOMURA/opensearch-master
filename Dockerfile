@@ -1,4 +1,3 @@
-FROM opensearchproject/opensearch:latest
-
-# https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-kuromoji-analyzer.html
-RUN bin/opensearch-plugin install analysis-kuromoji analysis-icu
+FROM opensearchproject/opensearch:2.15.0
+RUN /usr/share/opensearch/bin/opensearch-plugin install analysis-kuromoji
+RUN /usr/share/opensearch/bin/opensearch-plugin install analysis-icu
