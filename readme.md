@@ -24,6 +24,11 @@ sudo sysctl -w vm.max_map_count=262144
 sudo sh -c 'sysctl -w vm.max_map_count=262144 >> /etc/sysctl.conf'
 ```
 
+### all indices on this node will be marked read-only
+ストレージの残りが少ない時に表示される  
+正常動作しないのでストレージ確保が必要  
+
 ## 参考
-https://opensearch.org/downloads.html
-https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/
+- https://opensearch.org/downloads.html
+- https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/
+- [Docker (Rancher Desktop) で OpenSearch 2.12.0 を試してみた](https://dev.classmethod.jp/articles/how-to-build-opensearch212-with-docker/)
